@@ -65,6 +65,10 @@ header{
     font-weight: bold;
     color: #0D4C91;
 }
+.navbar .nav-shadow{
+  box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+  background-color: white;
+}
 
 /* --------------------navbar end------------------------ */
 
@@ -121,6 +125,47 @@ header{
     box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
     margin-top: -450px;
     display: block;
+}
+@media(max-width: 991px){
+  .home{
+    padding: 10px;
+    padding-top: 100px;
+  }
+  .home a{
+    text-decoration: none;
+  }
+  .home .left-contents{
+    text-align: center;
+}
+.home h1{
+  width: 100%;
+}
+.home .left-contents{
+  text-align: center;
+}
+.home-para{
+  width: 100%;
+}
+.home .image-1{
+  height: auto;
+  width: auto;
+  margin: 0 auto;
+  display: block;
+}
+.home .image-2{
+display: none;
+}
+.home .right-card-1 .card{
+  float: center;
+  margin: 0 auto;
+  display: block;
+  margin-top: 10px;
+
+}
+.home .left-card .card{
+  float: center;
+  margin: 0 auto;
+}
 }
 
 /* --------------------home end------------------------ */
@@ -222,10 +267,10 @@ header{
     padding: 15px;
     margin: 0 auto;
     height: 100%;
-    -webkit-transition: background-color 2s ease-out;
-    -moz-transition: background-color 2s ease-out;
-    -o-transition: background-color 2s ease-out;
-    transition: background-color 2s ease-out;
+    -webkit-transition: background-color 1s ease-out;
+    -moz-transition: background-color 1s ease-out;
+    -o-transition: background-color 1s ease-out;
+    transition: background-color 1s ease-out;
 }
 .services .card img{
     width: 50px;
@@ -234,14 +279,23 @@ header{
 .services .card a{
     color: #0D4C91;
     text-decoration: none;
-    transition: 0.5s ease;
     
 }
 .services .card:hover, .services .card:focus, .services .card.active{
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    background-color: #0D4C91;
 }
-.services .card a:hover{
-    opacity: 0.7;
+.services .card:hover img, .services .card:focus img, .services .card.active img{
+  filter: brightness(0) invert(1);
+}
+.services .card:hover p, .services .card:focus p, .services .card.active p{
+  color: #ffffff;
+}
+.services .card:hover a, .services .card:focus a, .services .card.active a{
+  color: #ffffff;
+}
+.services .card:hover h6, .services .card:focus  h6, .services .card.active  h6{
+  color: #ffffff;
 }
 .services .row{
     margin-top: 50px;
@@ -280,7 +334,6 @@ header{
 .products .filterbox{
     margin-top: 50px;
 }
-
 .products a{
     text-decoration: none;
 }
@@ -521,6 +574,7 @@ header{
     box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
     border-radius: 15px;
     margin: 0 auto;
+    margin-top: 120px;
   }
   .contact .contact-details{
     margin-top: 50px;
@@ -538,7 +592,7 @@ header{
     width: 400px;
     border: 0;
     box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
-    padding: 20px 30px;
+    padding: 20px 20px;
     margin-top: 50px;
   }
   .contact .i-bg i{
@@ -561,5 +615,62 @@ header{
   }
   .contact-location
   
-
+  
   /* --------------------contact end------------------------ */
+
+
+
+
+  /* --------------------news-letter start------------------------ */
+
+  .news-letter{
+    margin-top: 150px;
+  }
+  .news-letter .news-letter-box{
+    background-color: #0d4d9109;
+    padding: 50px;
+    margin-top: 150px;
+    border-radius: 20px;
+  }
+  .news-letter .input-group{
+    width: 600px;
+    margin: 0 auto;
+  }
+  .news-letter .input-field {
+    padding: 15px;
+    border-radius: 15px;
+    border: 0;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+  }
+  .news-letter .input-field::placeholder{
+    font-size: 13px;
+  }
+
+  
+  /* --------------------news-letter end------------------------ */
+
+
+
+  /* --------------------footer start------------------------ */
+
+  .footer{
+    margin-top: 100px;
+    background-color: #0D4C91;
+    padding: 50px;
+    justify-content: center;
+  }
+  .footer a{
+    text-decoration: none;
+  }
+  .footer .links{
+    justify-content: center;
+  }
+  .footer a{
+    color: white;
+    transition: 0.3s ease;
+  }
+  .footer a:hover{
+    color: #bec4d3;
+  }
+
+  /* --------------------footer end------------------------ */
