@@ -194,6 +194,7 @@ display: none;
     -webkit-filter: grayscale(0);
 }
 
+
 /* --------------------client-logos end------------------------ */
 
 
@@ -672,5 +673,169 @@ display: none;
   .footer a:hover{
     color: #bec4d3;
   }
-
+  
   /* --------------------footer end------------------------ */
+
+
+  /* --------------------about-us start------------------------ */
+
+  .about-us{
+    margin-top: 200px;
+  }
+  .about-us .about-us-para{
+    text-align: justify;
+  }
+  .about-us .about-us-more{
+    margin-top: 50px;
+  }
+  .about-us .about-us-more img{
+    width: 450px;
+    height: auto;
+    border-radius: 0px 0px 250px 250px;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+  }
+  .about-us .about-us-more i{
+    font-size: 15px;
+    margin-top: 3px;
+    color: #0D4C91;
+  }
+  .about-us .client-logos{
+    background-color: #0d4d9113;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .about-us .about-description{
+    margin-top: 50px;
+  }
+  .about-us .about-description img{
+    width: 450px;
+    height: auto;
+    border-radius: 0px 0px 250px 250px;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+  }
+  .about-us .about-description-para{
+    margin-top: 100px;
+  }
+  @media(max-width: 991px){
+    .about-us{
+      padding: 10px;
+    }
+    .about-us .about-us-more img{
+      width: auto;
+      height: auto;
+    }
+    .about-us .client-logos img{
+      display: block;
+      margin: 0 auto;
+    }
+    .about-us .about-description img{
+      width: 100%;
+      height: 100%;
+    }
+    .about-us .about-description{
+      margin-top: 5px;
+    }
+  }
+
+/* --------------------about-us end------------------------ */
+
+
+/* --------------------about-us end------------------------ */
+
+  .contact-us{
+    margin-top: 200px;
+  }
+  .contact-us .left-col-bg{
+    background: url("../images/contact/contact-us-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+  }
+  .contact-us-form{
+    margin-top: 50px;
+  }
+  .contact-us .right-col-bg{
+    background-color: #0d4d910c;
+    width: 100%;
+    height: 100vh;
+    padding-top: 30px;
+  }
+  .contact-us .right-col-bg form{
+    padding: 50px 30px;
+    border: 0;
+    width: 450px;
+    height: auto;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    margin: 0 auto;
+    border-radius: 16px;
+  }
+  .contact-us .right-col-bg form label{
+    color: #0D4C91;
+  }
+  .padding-0{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .contact-us .right-col-bg form input, .contact-us .right-col-bg form textarea{
+    background-color: #0d4d910c;
+    border: 0;
+    border-radius: 8px;
+    padding: 10px;
+  }
+  .contact-us .right-col-bg form input::placeholder, .contact-us .right-col-bg form textarea::placeholder{
+    font-size: 13px;
+  }
+  .contact-us .icons .icon-bg{
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    background-color: #0D4C91;
+    transition: 0.3s ease;
+    padding: 6px;
+    transition: 0.3s ease;
+  }
+  .contact-us .icons .icon-bg:hover{
+    opacity: 0.7;
+  }
+  .contact-us .icons .icon-bg i{
+    color: white;
+    font-size: 15px;
+    margin-left: 3px;
+  }
+  .contact-us .map-details{
+    margin: 20px;
+  }
+  .contact-us .map-details iframe{
+    height: 100%;
+    border-radius: 3px;
+  }
+  .contact-us .location li{
+    list-style: none;
+  }
+  .contact-us .dubai{
+    background-color: white;
+    padding: 20px;
+    width: 100%;
+    border-radius: 3px;
+    margin-top: 12px;
+  }
+  @media(max-width: 991px){
+    .contact-us{
+      padding: 10px;
+    }
+    .contact-us .right-col-bg form{
+      width: 100%;
+      /* height: 100%; */
+    }
+    .contact-us .left-col-bg{
+      height: 60vh;
+    }
+    .contact-us .right-col-bg{
+      height: 100%;
+    }
+  }
+
+  /* --------------------about-us end------------------------ */
